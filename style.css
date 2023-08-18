@@ -1,0 +1,46 @@
+.container {
+    padding: 20px;
+}
+
+.option-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.button {
+    padding: 10px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.avatar-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatar-display {
+    position: relative;
+    width: 100%;
+    height: 700px;
+}
+
+.avatar-display img {
+    object-fit: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.face {
+    z-index: 1;
+}
+
+.body {
+    z-index: 0;
+}

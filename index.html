@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!-- 반응형 웹디자인 설정 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draw my own character</title>
+    <!-- 스타일시트 연결 -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- 필요한 JavaScript 함수들을 포함하는 파일들 -->
+    <!-- 이미지 관련 함수 -->
+    <script src="imageLoader.js"></script>
+    <!-- 이벤트 핸들러 함수 -->
+    <script src="eventHandler.js"></script>
+</head>
+<body>
+    <!-- 주요 레이아웃 시작 -->
+    <div class="container">
+        <!-- 캐릭터 부품 선택 버튼들 -->
+        <div class="option-buttons">
+            <label class="button">
+                <!-- 얼굴 선택 라디오 버튼 -->
+                <input type="radio" name="characterPart" value="face" checked> FACE
+            </label>
+            <label class="button">
+                <!-- 몸통 선택 라디오 버튼 -->
+                <input type="radio" name="characterPart" value="body"> BODY
+            </label>
+        </div>
+        <!-- 아바타 이미지 표시 영역 -->
+        <div class="avatar-container">
+            <!-- 이전 이미지로 변경하는 버튼 -->
+            <div class="button" id="prevButton">&#10094;</div>
+            <div class="avatar-display">
+                <!-- 몸통 이미지 -->
+                <img class="body" id="bodyImage" src="" alt="Body Image">
+                <!-- 얼굴 이미지 -->
+                <img class="face" id="faceImage" src="" alt="Face Image">
+            </div>
+            <!-- 다음 이미지로 변경하는 버튼 -->
+            <div class="button" id="nextButton">&#10095;</div>
+        </div>
+    </div>
+    <!-- 초기 설정 및 이벤트 연결을 위한 스크립트 -->
+    <script src="setup.js"></script>
+</body>
+</html>
